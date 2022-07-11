@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:four_blocks/widgets/block_tile.dart';
+import 'package:four_blocks/widgets/blocks/block_tile.dart';
 
 class BlockGrid extends StatelessWidget {
   const BlockGrid({

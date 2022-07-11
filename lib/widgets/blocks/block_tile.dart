@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../screens/block_screen.dart';
+import '../../screens/block_screen.dart';
 
 class BlockTile extends StatelessWidget {
   const BlockTile({
@@ -25,9 +25,13 @@ class BlockTile extends StatelessWidget {
           child: Text('Block #$block'),
         ),
       ),
-      onTap: () => Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => BlockScreen(blockNumber: block),
-      )),
+      onTap: () => Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => BlockScreen(
+            blockNumber: block,
+          ),
+        ),
+      ),
     );
   }
 }

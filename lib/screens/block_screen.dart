@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:four_blocks/widgets/plots/plot_grid.dart';
 
 class BlockScreen extends StatefulWidget {
   const BlockScreen({
@@ -19,8 +20,9 @@ class _BlockScreenState extends State<BlockScreen> {
       appBar: AppBar(
         title: Text('Block number ${widget.blockNumber}'),
       ),
-      body: Text(
-        widget.blockNumber,
+      body: const PlotGrid(
+        width: 100,
+        length: 50,
       ),
     );
   }

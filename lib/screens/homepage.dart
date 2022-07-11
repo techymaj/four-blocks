@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:four_blocks/widgets/block_grid.dart';
+import 'package:four_blocks/widgets/blocks/block_grid.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -9,8 +9,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var length = 100;
-  var width = 50;
+  var length = 100 * 2;
+  var width = 50 * 2;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,14 +29,14 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text('Width: $width'),
+              Text('Width: ${width / 2}'),
               ElevatedButton(
                 onPressed: () {
                   setState(() {});
                 },
                 child: const Text('Generate'),
               ),
-              Text('Length: $length'),
+              Text('Length: ${length / 2}'),
             ],
           ),
         ],
